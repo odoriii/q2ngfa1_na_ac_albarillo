@@ -1,0 +1,49 @@
+*{
+    margin:0;
+}
+/** 720 landscape screen **/
+@media screen and (max-width: 720px){
+    nav{
+        background-color: #E0F4FF;
+    }
+}
+/** square tablets **/
+@media screen and (max-width: 640px){
+    nav{
+        background-color: aqua;
+    }
+}
+/** some tablets **/
+@media screen and (max-width: 600px){
+    nav{
+        background-color: #E0F4FF;
+    }
+}
+/** fully mobile **/
+@media screen and (max-width: 480px){
+    nav{
+        background-color: aqua;
+    }
+}
+#sitename{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left : 1vw;
+}
+.navlink{
+    text-decoration: none;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 99vw;
+    background-color: #E0F4FF;
+}
+
+section{
+    display:flex;
+    border: 1px solid black;
+    height: 85vh;
+}   
