@@ -1,6 +1,62 @@
 *{
     margin:0;
 }
+body{
+    display:flex;
+    flex-direction: column;
+    justify-items: space-between;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.links a{
+    margin-left:1vw;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 97vw;
+    background-color: #E0F4FF;
+    padding: 1vw;
+}
+#pagetitle{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left : 1vw;
+}
+.links{
+    text-decoration: none;
+   padding-top: 3px;
+}
+section video{
+    display:flex;
+    height:70vh;
+}
+
+/* base sprite css*/
+.icon{
+    background: url(sprite3.png) no-repeat -141px -221px;
+	width: 66px;
+	height: 66px;
+    display: inline-block;
+}
+/*individual sprite positions*/
+#twitter{
+    background: url(sprite3.png) no-repeat -66px -72px;
+	width: 67px;
+	height: 66px;
+}
+#fb{
+    background: url(sprite3.png) no-repeat -439px -146px;
+	width: 66px;
+	height: 66px;
+}
+#youtube{
+    background: url(sprite3.png) no-repeat -439px -221px;
+	width: 66px;
+	height: 66px;
+}
 /** 720 landscape screen **/
 @media screen and (max-width: 720px){
     nav{
@@ -14,36 +70,47 @@
     }
 }
 /** some tablets **/
+/* code for site responsiveness*/
 @media screen and (max-width: 600px){
     nav{
-        background-color: #E0F4FF;
-    }
-}
-/** fully mobile **/
-@media screen and (max-width: 480px){
-    nav{
+        position: relative;
+        background-color: white;
+     }
+    .pagetitle{
         background-color: aqua;
+        padding: 1vw;
+        color: black;
+        transition:.5s;
     }
-}
-#sitename{
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    padding-left : 1vw;
-}
-.navlink{
-    text-decoration: none;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    width: 99vw;
-    background-color: #E0F4FF;
+    .links{
+         display: none;
+         position: absolute;
+         min-width: 100vw;
+         box-shadow: 0px 8px 16px 0px #B0A695;
+         z-index: 1;
+         background-color: #427D9D;
+    }
+    .links a{
+        color: rgb(240, 237, 237);
+        display: block;
+        transition: .5s;
+        margin-left:0;
+        padding-left: 1vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    
+    }
+    .links a:hover{
+        background-color:#164863;
+        transition: .5s;
+    }
+    nav:hover .links{
+       display: block;
+       transition: .5s;
+    }
+    nav:hover .pagetitle{background-color: blanchedalmond; transition: .5s;
+       }
 }
 
-section{
-    display:flex;
-    border: 1px solid black;
-    height: 85vh;
-}   
+@media screen and (max-width: 480px){
+    }
